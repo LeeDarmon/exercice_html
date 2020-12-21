@@ -1,0 +1,25 @@
+
+
+.article_title{
+    color:grey;
+    padding-bottom:10px;
+}
+
+h2{
+    font-style: italic;
+}
+
+.paragraphe1{
+    margin-left:15px;
+    margin-right:15px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color:grey;
+}
+

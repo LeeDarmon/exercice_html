@@ -3,42 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <title>Voici un titre</title>
+<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <fieldset>
-        <legend>Votre identité</legend>
-        <label>1. Nom : </label><input type="textarea" value="Nom"><br>
-        <label>2. Prenom : </label><input type="text" value="Prenom"><br>
-        <label>3. Adresse mail : </label><input type="text" value="Mail">
+    <form action="ex6.html" method="POST" class="form">
+    <fieldset class="fieldset1">
+        <legend class="fieldset1">Votre identité</legend>
+        <label for="nom">1. Nom : </label><input type="textarea" placeholder="Nom" id="nom"><br>
+        <label for="prenom">2. Prenom : </label><input type="text" placeholder="Prenom" id="prenom"><br>
+        <label for="mail">3. Adresse mail : </label><input type="email" placeholder="Mail" id="prenom">
 
     </fieldset>
 
-    <fieldset>
-        <legend>Adresse livraison</legend>
-        <label>1. Adresse : </label><textarea value="adresse"></textarea><br>
-        <label>2. Code postal : </label><input type="text" value="Code postal"><br>
-        <label>3. Ville : </label><input type="text" value="Ville">
+    <fieldset class="fieldset2">
+        <legend class="fieldset2">Adresse livraison</legend>
+        <label for="adresse">1. Adresse : </label><textarea rows="5" cols="10" name="adresse" id="adresse"></textarea><br>
+        <label for="code_postal">2. Code postal : </label><input type="text" placeholder="Code postal" name="code_postal" id="code_postal" pattern="[0-9]{5}"><br>
+        <label for="ville">3. Ville : </label><input type="text" placeholder="Ville" name="ville" id="ville">
 
     </fieldset>
 
-    <fieldset>
-        <legend>Information de règlement</legend>
+    <fieldset class="fieldset3">
+        <legend class="fieldset3">Information de règlement</legend>
         <label>1. Type de carte : </label><br>
-        <input type="radio" id="visa" name="drone" value="visa">
-        <label for="huey">Visa</label>
+        <input type="radio" id="visa" name="check" placeholder="visa">
+        <label for="visa">Visa</label>
 
         <br>
 
-        <input type="radio" id="mastercard" name="drone" value="mastercard">
+        <input type="radio" id="mastercard" name="check" placeholder="mastercard">
         <label for="mastercard">Mastercard</label>
 
         <br>
 
-        <label>2. Numéros de carte : </label><input type="text" value="Numeros"><br>
-        <label>3. Code de sécurité : </label><input type="text" value="Code"><br>
-        <label>4 Nom du titulaire : </label><input type="text" value="Nom du titulaire">
+        <label for="numeros">2. Numéros de carte : </label><input type="text" placeholder="Numeros" name="numeros" id="numeros"><br>
+        <label for="code">3. Code de sécurité : </label><input type="text" placeholder="Code" name="code" id="code"><br>
+        <label for="nom_titulaire">4. Nom du titulaire : </label><input type="text" placeholder="Nom du titulaire" name="nom_titulaire" id="nom_titulaire">
 
     </fieldset>
+    <input type="submit" value="J'achète!">
+    </form>
 </body>
 </html>
