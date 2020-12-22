@@ -1,5 +1,7 @@
 
-
+body{
+background-color: grey!important;
+}
 .article_title{
     color:grey;
     padding-bottom:10px;
@@ -9,19 +11,98 @@ h2{
     font-style: italic;
 }
 
+a {
+    text-decoration: none!important;
+}
+
+li{
+    list-style: none!important;
+}
+
 .paragraphe1{
-    margin-left:15px;
-    margin-right:15px;
+
+}
+
+nav{
+    border:1px solid black;
 }
 
 .nav-link{
     text-decoration: none;
-    color:grey!important;
+    color:white!important;
 }
 
 .nav-link:hover{
-    color:white!important;
+    color:wheat!important;
 }
+
+.img_footer{
+    width:40%;
+}
+.sidebar-link{
+    margin-top:20px;
+    color:white;
+}
+
+.sidebar-link:hover{
+    color:wheat;
+}
+
+.sidebar-title{
+    color:white;
+}
+
+.white_txt{
+    color:white;
+}
+
+.li-sidebar{
+    margin-top:20px;
+}
+
+.margin-top-sublime{
+    background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top:30px;
+}
+
+.aside{
+    margin-top:-30px;
+    padding-top:50px;
+    /* background-color:#343a40!important */
+   
+}
+
+.no-margin{
+    margin-left:0;
+    margin-right:0;
+}
+
+
+footer{
+    padding-top:20px;
+    color:white;
+    border: 1px solid black;
+    background-color:#343a40!important;
+}
+
+@media only screen and (max-width: 768px)  {
+.sidebar-title{
+    font-size:15px;
+}
+}
+
+@media only screen and (max-width: 575px)  {
+    .aside{
+        display:none!important;
+    }
+
+
+}
+
 
 
 
